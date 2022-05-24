@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>C Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+
+            <li><a class="nav-link" href="#First_C_Program">First C Program</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li>
+                <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+            </li>
+
+
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#Keywords">Keywords</a></li>
+
+            <li>
+                <a class="nav-link" href="#if...else_statement">if...else statement</a>
+            </li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li>
+                <a class="nav-link" href="#Function_Aspects">Function Aspects</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Array">Array</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaration_of_Array">Declaration of Array</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Initialization_of_Array">Initialization of Array</a>
+            </li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+
+                <ul>
+                    <li>
+                        C language Tutorial with programming approach for beginners and professionals, helps you to
+                        understand the
+                        C language tutorial easily. Our C tutorial explains each topic with programs.
+                    </li>
+                    <li>
+                        The C Language is developed by Dennis Ritchie for creating system applications that
+                        directly interact with the hardware devices such as drivers, kernels, etc.
+                    </li>
+                    <li>
+                        C programming is considered as the base for other programming languages, that is why it is known
+                        as mother language.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+
+
+        <section class="main-section" id="First_C_Program">
+            <header>First C Program</header>
+            <article>
+                <p>To write the first c program, open the C console and write the following code:</p>
+                <code>
+                    int main(){    
+                    printf("Hello C Language");    
+                    return 0;   
+                    }  
+          </code>
+
+
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+                A variable is a name of the memory location. It is used to store data.
+                Its value can be changed, and it can be reused many times.
+
+
+            </p>
+            <p>
+                It is a way to represent memory location through symbol so that it can be easily identified.
+            </p>
+
+        </section>
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+            <article>
+                <p>Let's see the syntax to declare a variable:</p>
+
+                <code>type variable_list;  </code>
+
+                <p>
+                    The example of declaring the variable is given below:</p>
+                <code>int a;  
+                        float b;  
+                        char c;  </code> Here, a, b, c are variables. The int, float, char are the data types.
+
+                <p>
+                    We can also provide values while declaring the variables as given below:</p>
+                <code>int a=10,b=20; //declaring 2 variable of integer type  
+                        float f=20.8;  
+                        char c='A';  </code>
+
+
+            </article>
+        </section>
+
+
+
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <article>
+                <p>A data type specifies the type of data that a variable can store such as integer, floating,
+                    character, etc.</p>
+                <ul>
+                    <li>
+                        <p>There are the following data types in C language.</p>
+                        <ul>
+                            <li>Basic Data Type</li>
+                            <li>
+                                Derived Data Type
+                            </li>
+                            <li>
+                                Enumeration Data Type
+                            </li>
+                            <li>Void Data Type</li>
+
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </article>
+            <section class="main-section" id="Keywords">
+                <header>Keywords</header>
+                <article>
+                    <p> A keyword is a reserved word. You cannot use it as a variable name, constant name, etc.
+                        There are only 32 reserved words (keywords) in the C language.</p>
+                    <p>
+                        A list of 32 keywords in the c language is given below:
+                    </p>
+
+
+                    </p>
+                    <p>
+                        We can also provide values while declaring the variables as given below:</p>
+                    <code>int a=10,b=20; //declaring 2 variable of integer type  
+                            float f=20.8;  
+                            char c='A';  </code>
+
+
+                </article>
+            </section>
+        </section>
+        <section class="main-section" id="if...else_statement">
+            <header>if...else statement</header>
+            <article>
+                <p> The if-else statement in C is used to perform the operations based on some specific condition.
+                    The operations specified in if block are executed if and only if the given condition is true.</p>
+                <p>There are the following variants of if statement in C language.</p>
+                <ul>
+                    <li>
+                        If statement
+                    </li>
+                    <li>
+                        If-else statement
+                    </li>
+                    <li>
+                        If else-if ladder
+                    </li>
+                    <li>
+                        Nested if
+                    </li>
+                </ul>
+                <p>The if-else statement is used to perform two operations for a single condition.
+                    The if-else statement is an extension to the if statement using which, we can perform two different
+                    operations,
+                    i.e., one is for the correctness of that condition, and the other is for the incorrectness of the
+                    condition.
+                    Here, we must notice that if and else block cannot be executed simiulteneously.
+                    Using if-else statement is always preferable since it always invokes an otherwise case with every if
+                    condition.
+                    The syntax of the if-else statement is given below.</p>
+                <code>if(expression){  
+                    //code to be executed if condition is true  
+                    }else{  
+                    //code to be executed if condition is false  
+                    }  </code>
+
+                <p>
+                    Let's see the simple example to check whether a number is even or odd using if-else statement in C
+                    language.
+                </p>
+                <code>int main(){    
+                    int number=0;    
+                    printf("enter a number:");    
+                    scanf("%d",&number);     
+                    if(number%2==0){    
+                    printf("%d is even number",number);    
+                    }    
+                    else{    
+                    printf("%d is odd number",number);    
+                    }     
+                    return 0;  
+                    }    
+          </code>
+                <p>Output:</p>
+
+                <code>enter a number:4
+                    4 is even number
+                    enter a number:5
+                    5 is odd number</code>
+
+            </article>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>In c, we can divide a large program into the basic building blocks known as function.
+                    The function contains the set of programming statements enclosed by {}.
+                    A function can be called multiple times to provide reusability and modularity to the C program.
+                    In other words, we can say that the collection of functions creates a program.
+                    The function is also known as procedureor subroutinein other programming languages.</p>
+
+
+            </article>
+        </section>
+        <section class="main-section" id="Function_Aspects">
+            <header>Function Aspects</header>
+            <article>
+                <p>There are three aspects of a C function.</p>
+
+                <ul>
+                    <li><b>Function declaration:</b> A function must be
+                        declared globally in a c program to tell the compiler about the function name, function
+                        parameters, and return type.</li>
+                    <p>Syntax:</p><code>return_type function_name (argument list);</code>
+                    <li>
+                        <b>Function call:</b> Function can be called from anywhere in the program. The parameter list
+                        must not differ in function calling and function declaration.
+                        We must pass the same number of functions as it is declared in the function declaration.
+                    </li>
+                    <p>Syntax:</p><code>function_name (argument_list)</code>
+                    <li>
+                        <b>Function definition:</b> It contains the actual statements which are to be executed. It is
+                        the most important aspect to which the control comes when the function is called.
+                        Here, we must notice that only one value can be returned from the function.
+                    </li>
+                    <p>Syntax:</p><code>return_type function_name (argument list) {function body;}</code>
+                </ul>
+
+            </article>
+        </section>
+        <section class="main-section" id="Array">
+            <header>Array</header>
+            <article>
+                <p>An array is defined as the collection of similar type of data items stored at contiguous memory
+                    locations.
+                    Arrays are the derived data type in C programming language which can store the primitive type of
+                    data such as int,
+                    char, double, float, etc. It also has the capability to store the collection of derived data types,
+                    such as pointers,
+                    structure, etc.
+                    The array is the simplest data structure where each data element can be randomly accessed by using
+                    its index number.</p>
+                <p>C array is beneficial if you have to store similar elements. For example, if we want to store the
+                    marks of a student in
+                    6 subjects, then we don't need to define different variables for the marks in the different subject.
+                    Instead of that, we can define an array which can store the marks in each subject at the contiguous
+                    memory locations.</p>
+
+
+
+            </article>
+        </section>
+        <section class="main-section" id="Declaration_of_Array">
+            <header>Declaration of Array</header>
+            <article>
+                <p>We can declare an array in the c language in the following way.</p>
+                <code>data_type array_name[array_size];  </code>
+            </article>
+        </section>
+        <section class="main-section" id="Initialization_of_Array">
+            <header>Initialization of Array</header>
+            <article>
+                <p>The simplest way to initialize an array is by using the index of each element.
+                    We can initialize each element of the array by using the index.
+                    Consider the following example.</p>
+                <code>marks[0]=80; //initialization of array  
+                marks[1]=60;  
+                marks[2]=70;  
+                marks[3]=85;  
+                marks[4]=75;    </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation in this page is taken from
+                        <a href="https://www.javatpoint.com/functions-in-c" target="_blank">Javatpoint</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
